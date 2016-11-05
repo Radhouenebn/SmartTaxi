@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Smart Taxi</string>
+    <string name="Login">Login</string>
+    <string name="LoginDrv">Login as Driver</string>
+    <string name="LoginClt">Login as Customer</string>
+    <string name="Username">Username</string>
+    <string name="Fullname">FullName</string>
+    <string name="User_Icon">User Icon</string>
+    <string name="Phone_Icon">Phone Icon</string>
+    <string name="Phone">Phone</string>
+    <string name="RePass_text">Confirm Password</string>
+    <string name="Register">Register</string>
+    <string name="loginLink">Already registred. Login Me!</string>
+    <string name="Password">Password</string>
+    <string name="Pass_Icon">Pass Icon</string>
+    <string name="Car_Icon">Car Icon</string>
+    <string name="Mat_Icon">Matricule Icon</string>
+    <string name="Email_Icon">Email Icon</string>
+    <string name="Name_Icon">name Icon</string>
+    <string name="Email">Email</string>
+    <string name="registerLink">Do not have any account yet?</string>
+    <string name="bgimage">\@strings/description</string>
+    <string name="title_activity_map_customer">Map</string>
+    <string name="demande_course_rapide">Demande course rapide</string>
+</resources>

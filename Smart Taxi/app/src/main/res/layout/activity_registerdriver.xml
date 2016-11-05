@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    tools:context="com.example.radhouene.taxithirdtry.registerdriver">
+
+    <ImageView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Name_Icon"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/name"
+        android:layout_alignParentTop="true" />
+    <EditText
+        android:id="@+id/RegFullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Full Name"
+        android:layout_above="@+id/RegUsername"
+        android:layout_alignRight="@+id/RegUsername"
+        android:layout_alignEnd="@+id/RegUsername"
+        android:layout_alignLeft="@+id/RegUsername"
+        android:layout_alignStart="@+id/RegUsername">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/RegUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/userIcon"
+        android:ems="10"
+        android:hint="@string/Username"
+        android:layout_above="@+id/emailIcon" />
+
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/User_Icon"
+        android:src="@drawable/user60x60" />
+
+    <ImageView
+        android:id="@+id/emailIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userIcon"
+        android:layout_below="@+id/userIcon"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Email_Icon"
+        android:src="@drawable/mail60" />
+
+    <EditText
+        android:id="@+id/RegEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emailIcon"
+        android:layout_alignLeft="@+id/RegUsername"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress" />
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailIcon"
+        android:layout_below="@+id/emailIcon"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Phone_Icon"
+        android:src="@drawable/phone60" />
+
+    <EditText
+        android:id="@+id/RegPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phoneIcon"
+        android:layout_alignLeft="@+id/RegEmail"
+        android:layout_alignParentRight="true"
+        android:hint="@string/Phone"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/RegPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/passIcon"
+        android:layout_alignLeft="@+id/RegPhone"
+        android:layout_alignParentRight="true"
+        android:hint="@string/Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/passIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneIcon"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/RegUsername"
+        android:contentDescription="@string/Pass_Icon"
+        android:src="@drawable/pass60" />
+
+    <ImageView
+        android:id="@+id/passIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passIcon"
+        android:layout_below="@+id/passIcon"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Pass_Icon"
+        android:src="@drawable/pass60r" />
+
+    <EditText
+        android:id="@+id/RegPass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/passIcon2"
+        android:layout_alignLeft="@+id/RegPass"
+        android:layout_alignParentRight="true"
+        android:hint="@string/RePass_text"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/carModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passIcon2"
+        android:layout_below="@+id/passIcon2"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/Car_Icon"
+        android:src="@drawable/car50" />
+
+    <EditText
+        android:id="@+id/RegCarModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Car Model"
+        android:ems="10"
+        android:layout_alignBottom="@+id/carModel"
+        android:layout_alignRight="@+id/RegPass2"
+        android:layout_alignEnd="@+id/RegPass2"
+        android:layout_alignLeft="@+id/RegPass2"
+        android:layout_alignStart="@+id/RegPass2" />
+    <ImageView
+        android:id="@+id/carMat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Mat_Icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/matricule"
+        android:layout_alignBottom="@+id/RegCarMat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/RegCarMat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Car Registration number"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:layout_below="@+id/RegCarModel"
+        android:layout_alignRight="@+id/btnRegister"
+        android:layout_alignEnd="@+id/btnRegister"
+        android:layout_alignLeft="@+id/RegCarModel"
+        android:layout_alignStart="@+id/RegCarModel" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/carMat"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_login"
+        android:textColor="#fff"
+        android:text="@string/Register" />
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.radhouene.taxithirdtry.Accueil">
+
+    <Button
+        android:id="@+id/LinkRegisterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="40dp"
+        android:text="@string/registerLink"
+        android:textColor="#edac00"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/btnLoginDrv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login"
+        android:text="@string/LoginDrv"
+        android:textColor="#fff"
+        android:layout_above="@+id/LinkRegisterId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+        android:id="@+id/btnLoginClt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login"
+        android:text="@string/LoginClt"
+        android:textColor="#fff"
+        android:layout_above="@+id/LinkRegisterId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/emailIcon"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/bgimage" />
+
+
+</RelativeLayout>
